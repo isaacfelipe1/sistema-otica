@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== true) {
-    header('Location:login.php'); // Redireciona para a página de login se o usuário não estiver autenticado
+    header('Location:login.php'); 
     exit;
 }
 ?>
@@ -41,14 +41,14 @@ if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== true) {
 }
 .teste {
     background-color: #E3E3E3;
-    padding: 5%; /* Usando porcentagem para o preenchimento */
+    padding: 5%;
     color: #DA101B;
-    max-width: 100%; /* Largura máxima para tornar responsivo */
+    max-width: 100%; 
     border: 2px solid #DA101B;
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
-    font-size: 1.2em; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 1.2em; 
 }
 
 
@@ -61,7 +61,7 @@ if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== true) {
     color:#666;
 }
 .btn {
-    width: 100%; /* Defina a largura do botão como 100% para corresponder ao elemento "teste" */
+    width: 100%; 
     height: 100%;
 }
 .btn-lentes{
@@ -141,7 +141,7 @@ if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== true) {
             window.location.href = "logout.php"; 
         }
         function cadastrar_lentes() {
-        window.location.href = "cadastro_lentes.php"; // Redireciona para a nova página de cadastro
+        window.location.href = "cadastro_lentes.php"; 
         }
         function visualizar_lentes() {
             window.location.href = "visualizar_lentes.php"; 
