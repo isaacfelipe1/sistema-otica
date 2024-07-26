@@ -1,0 +1,18 @@
+.btn-danger{
+    color: white;
+    padding: 30px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 50px;
+}
+.mudarcor{
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.b-cadastrar{
+    padding: 20px;
+}
