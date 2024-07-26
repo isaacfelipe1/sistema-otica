@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== true) {
-    header('Location: index.php'); // Redireciona para a página de login se o usuário não estiver autenticado
+    header('Location: index.php'); 
     exit;
 }
 ?>
@@ -109,13 +109,13 @@ if (!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== true) {
 </div>
 </div>
 <?php
-    // Feche a conexão com o banco de dados
+    
     $conn->close();
     ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         function retornar() {
-            // Redireciona para a página de cadastro
+           
             window.location.href = "inicial.php"; 
         }
     </script>
