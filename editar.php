@@ -1,5 +1,5 @@
 <?php
-// editar.php
+
 
 $servername = "xmysql.oticasmundialita.com";
 $username = 'oticasmundialit';
@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id'])) {
     $id = $_POST['id'];
 
-    // Recupera os dados do registro que você deseja editar
+    
     $sql = "SELECT * FROM produtos WHERE id = $id";
     $result = $conn->query($sql);
 
@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id'])) {
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
             <script>
         function retornar() {
-            // Redireciona para a página de cadastro
+            
             window.location.href = "inicial.php"; 
         }
     </script>
