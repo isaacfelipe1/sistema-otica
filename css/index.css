@@ -20,7 +20,7 @@ html,body{
   }
   .input-menor:focus {
     border-color: #DA101B;
-    border: none; /* Cor da borda quando em foco */
+    border: none; 
   }
   .form-control{
     border-radius: 10px;
