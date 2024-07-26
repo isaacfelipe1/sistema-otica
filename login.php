@@ -13,7 +13,7 @@ if ($usuario == $_POST['nome'] && $senha == $_POST['senha']) {
   header("location:inicial.php");
     exit;
   }else {
-    // login inválido, exibe uma mensagem de erro
+  
     echo "Nome de usuário ou senha inválidos.";
   mysqli_close($conexao);
   }
