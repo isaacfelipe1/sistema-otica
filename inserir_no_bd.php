@@ -1,5 +1,5 @@
 <?php
-// Dados do formulário
+
 $numero_nota_fiscal = $_POST['numero_nota_fiscal'];
 $data_nota_fiscal = $_POST['data_nota_fiscal'];
 $fornecedor = $_POST['fornecedor'];
