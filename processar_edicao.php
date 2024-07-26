@@ -1,5 +1,4 @@
 <?php
-// processar_edicao.php
 header('Content-Type: text/html; charset=utf-8');
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 header("Cache-Control: post-check=0, pre-check=0", false);
@@ -31,7 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $selecao_aluminio = $_POST['selecao_aluminio'];
     $selecao_Acetado = $_POST['selecao_Acetado'];
 
-    // Use declarações preparadas para evitar a injeção de SQL
     $sql = "UPDATE produtos SET 
             numero_nota_fiscal = ?,
             data_nota_fiscal = ?,
